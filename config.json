@@ -1,0 +1,32 @@
+{
+    "model_name": "yolo11n.pt",
+
+    "mode": "file",
+    "mode_options": ["file", "stream"],
+
+    "source": "data/cvtest.avi",
+    "sources_comment": {
+        "0": "Web-камера устройства",
+        "1": "Вторая подключённая камера",
+        "2": "Дополнительный источник или IP-камера (rtsp)"
+    },
+    "zones": {
+        "area1": {
+            "xa1": 0,
+            "ya1": 0,
+            "xa2": 0.27,
+            "ya2": 0.6,
+            "intersection_threshold": 0.15,
+            "color": [0, 255, 0]
+        },
+        "area2": {
+            "xa1": 0.27,
+            "ya1": 0,
+            "xa2": 0.6,
+            "ya2": 0.75,
+            "intersection_threshold": 0.2,
+            "color": [255, 0, 0]
+        },
+        "default_color": [0, 0, 255]
+    }
+}
